@@ -1,0 +1,31 @@
+.work-cont{
+    display: flex;
+    align-items: flex-start;
+    max-width: 350px;
+    margin: 10px 0px;
+}
+.company-logo {
+    width: 40px;
+}
+.company-logo-cont{
+    margin: 0px 10px;
+}
+.Work-data{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 100%;
+}
+.company-name{
+    font-size: 16px;
+    font-weight: 600;
+}
+.work-head{
+    width: 100%;
+    color: #9d9da0;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

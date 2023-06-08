@@ -1,0 +1,32 @@
+.outer-cont{
+    
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 50px;
+}
+
+.Work-main{
+    border: 2px solid #9d9da0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 500px;
+    margin: 10px 20px;
+}
+.all-data{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+.work-cont-heading{
+    display: flex;
+    align-items: flex-end;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.54);
+}
+@media screen and (max-width: 849px) {
+    .outer-cont{
+        justify-content: center;
+        padding: 10px 0px;
+    }
+}
