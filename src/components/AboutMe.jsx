@@ -5,7 +5,9 @@ import email from "../assets/email.png";
 import insta from "../assets/instagram.png";
 import git from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
+import {data} from '../data'
 export default function AboutMe() {
+    console.log(data.socialMedia);
     return (
         <>
             <div className="main-container-about">
@@ -34,17 +36,17 @@ export default function AboutMe() {
                     <div className="media-links">
                         <a
                             className="social-links"
-                            href={'mailto:"bhaveshghanchi27@gmail.com"'}
+                            href={`mailto:${data.socialMedia.mail}`}
                         >
                             <img className="media-icons" src={email} alt="" />
                         </a>
-                        <a className="social-links" href="/">
+                        <a className="social-links" href={data.socialMedia.Insta}>
                             <img className="media-icons" src={insta} alt="" />
                         </a>
-                        <a className="social-links" href="/">
+                        <a className="social-links" href={data.socialMedia.github}>
                             <img className="media-icons" src={git} alt="" />
                         </a>
-                        <a className="social-links" href="/">
+                        <a className="social-links" href={data.socialMedia.linkedIn}>
                             <img className="media-icons" src={linkedin} alt="" />
                         </a>
                     </div>

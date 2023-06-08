@@ -1,22 +1,28 @@
 import React from "react";
 import python from "../assets/projectIcon/python.png";
+import C from '../assets/projectIcon/C.png';
+import java from '../assets/projectIcon/java.png';
+import JS from '../assets/projectIcon/js.png';
+import tableau from '../assets/projectIcon/tableau.png';
+import Website from '../assets/projectIcon/web.png';
 import './styles/card.css'
 
 function ProjCard(props) {
+    const { data } = props
+    const projIcon = [C, python, java, tableau, Website, JS]
     return (
         <>
             <div className="card-container">
                 <div className="logo-cont card-cont">
-                    <img src={python} className="logo" alt="Project logo" />
+                    <img src={projIcon[data.projectBase]} className="logo" alt="Project logo" />
                 </div>
-                <div className="project-title card-cont">Project 1</div>
+                <div className="project-title card-cont">{data.title}</div>
                 <div className="project-desc card-cont">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-                    ducimus hic non alias, expedita iste voluptas fugiat modi obcaecati
-                    beatae, labore accusamus corrupti rem placeat maiores delectus. Optio,
-                    aliquam animi!
+                    {data.desc}
                 </div>
-                <div className="project-link-cont card-cont"><a className="project-link" href="https://github.com/bhaveshGhanchi/HousingManagementSystem">View on Github</a></div>
+                {data.link &&
+                    <div className="project-link-cont card-cont"><a className="project-link" href={data.link}>View on Github</a></div>
+                }
             </div>
         </>
     );

@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: stretch;
     padding: 10px 50px;
 }
 
